@@ -45,6 +45,7 @@ function checkAnswer() {
 
 }
 
+
 /**
  * Get the operands (the numbers) and the operator (plus, minus etc)
  * directly from the dom, and return the correct answer.
