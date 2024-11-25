@@ -12,6 +12,8 @@
         It features a fun, interactive math quiz that challenges users to solve problems while improving their coding skills.
     </p>
 
+Visit Deployed Website (https://shan-tel4.github.io/love-maths/)
+
   <h2>Table of Contents</h2>
     <ol>
         <li><a href="#project-description">Project Description</a></li>
