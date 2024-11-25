@@ -177,9 +177,11 @@ body {
 
 /* --------- Media queries */
 
+/* General Mobile Styling (max-width: 414px) */
 @media (max-width: 414px) {
     .controls-area {
         width: 100%;
+        margin: 10px 0;
     }
 
     .btn--big {
@@ -199,54 +201,96 @@ body {
     .question-area {
         padding: 10% 0;
         width: 100%;
+        text-align: center;
     }
 
     .question-area span {
         padding: 0;
+        font-size: 1.5rem;
     }
 
     .answer-message {
         display: block;
+        font-size: 1rem;
+        text-align: center;
     }
 
     #answer-box {
         display: block;
-        margin: 0 auto;
+        margin: 10px auto;
+        width: 90%;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
     }
+
     .btn--gray {
         margin-top: 0;
+        padding: 5px 10px;
     }
 
     .score-area {
         width: 100%;
+        text-align: center;
     }
 
     .scores {
         margin: 0.5em auto;
         display: block;
         padding: 5px;
+        font-size: 1rem;
     }
 
     .heading {
         font-size: 2rem;
+        text-align: center;
     }
 }
 
+/* Extra Small Devices (max-width: 320px) */
 @media (max-width: 320px) {
     .game-area {
         height: 70vh;
+        padding: 10px;
     }
 
     .controls-area {
-        width: 75%;
+        width: 90%;
         margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .btn--big {
-        margin: 10px 10px;
-    }
-    .question-area {
-        padding: 10px 0;
+        margin: 5px;
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
     }
 
+    .question-area {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .question-area span {
+        font-size: 1.2rem;
+    }
+
+    #answer-box {
+        margin: 5px auto;
+        width: 85%;
+        font-size: 0.9rem;
+    }
+
+    .scores {
+        font-size: 0.9rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
 }
