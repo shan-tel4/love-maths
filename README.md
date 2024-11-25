@@ -51,15 +51,6 @@
         <li><strong>JavaScript</strong>: To add interactivity and logic for math quizzes.</li>
     </ul>
 
-   <h2 id="how-to-use">How to Use</h2>
-    <ol>
-        <li>Clone the repository:</li>
-        <pre><code>git clone https://github.com/shan-tel4/love-maths.git</code></pre>
-        <li>Navigate to the project directory:</li>
-        <pre><code>cd love-maths</code></pre>
-        <li>Open <code>index.html</code> in your browser to start the application.</li>
-    </ol>
-
   <h2 id="testing">Testing</h2>
     <h3>Manual Testing</h3>
     <ul>
