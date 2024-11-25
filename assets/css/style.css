@@ -248,8 +248,8 @@ body {
 }
 
 
-/* General Styling for Mobile Devices (max-width: 414px) */
-@media (max-width: 414px) {
+/* Responsive Styling for Small to Medium Screens (min-width: 314px, max-width: 1000px) */
+@media (min-width: 314px) and (max-width: 1000px) {
     body {
         margin: 0;
         padding: 0;
@@ -259,50 +259,51 @@ body {
     }
 
     .controls-area {
-        width: 100%;
+        width: 90%;
+        margin: 10px auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px; /* Add spacing between buttons */
-        margin: 15px 0;
+        gap: 15px; /* Add space between buttons */
     }
 
     .btn--big {
-        margin: 0;
         padding: 10px;
         border: 3px solid;
-        width: 60px; /* Slightly smaller buttons */
-        height: 60px;
-        font-size: 1.5rem;
+        width: calc(20% - 10px); /* Buttons resize based on width */
+        max-width: 80px;
+        height: auto;
+        font-size: 1.2rem;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .question-area {
-        padding: 10% 0;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
+        padding: 5% 0;
+        width: 90%;
+        margin: 0 auto 20px;
+        font-size: 1.5rem;
     }
 
     .question-area span {
-        padding: 0;
-        font-size: 1.5rem;
         display: inline-block;
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     .answer-message {
         display: block;
         font-size: 1rem;
-        margin: 10px 0;
+        margin: 15px 0;
         color: #444561;
     }
 
     #answer-box {
-        display: block;
         margin: 10px auto;
-        width: 80%; /* Full width with some padding */
+        width: 80%;
         padding: 10px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -310,58 +311,74 @@ body {
 
     .score-area {
         width: 100%;
+        margin: 15px auto;
         text-align: center;
-        margin: 10px 0;
     }
 
     .scores {
         margin: 5px auto;
-        display: block;
-        padding: 10px;
         font-size: 1rem;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* Additional Adjustments for Narrow Screens (min-width: 314px, max-width: 500px) */
+@media (min-width: 314px) and (max-width: 500px) {
+    .btn--big {
+        width: calc(30% - 10px); /* Resize buttons for narrower screens */
+        max-width: 60px;
+        font-size: 1rem;
+    }
+
+    .question-area {
+        font-size: 1.3rem;
+    }
+
+    #answer-box {
+        font-size: 1rem;
+    }
+
+    .scores {
+        font-size: 0.9rem;
     }
 
     .heading {
         font-size: 2rem;
-        margin-bottom: 10px;
     }
 }
 
-/* Styling for Extra Small Devices (max-width: 320px) */
-@media (max-width: 320px) {
-    .game-area {
-        height: auto; /* Remove fixed height */
-        padding: 10px;
-    }
-
+/* Adjustments for Medium Screens (max-width: 1000px) */
+@media (min-width: 501px) and (max-width: 1000px) {
     .controls-area {
-        width: 100%;
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 10px;
+        width: 80%;
+        gap: 20px; /* Increase spacing for larger screens */
     }
 
     .btn--big {
-        width: 50px;
-        height: 50px;
-        font-size: 1.2rem;
+        width: calc(15% - 10px);
+        max-width: 100px;
+        font-size: 1.5rem;
     }
 
     .question-area {
-        padding: 5px;
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     #answer-box {
-        margin: 5px auto;
-        width: 90%;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .scores {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .heading {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 }
