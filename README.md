@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  ## README
+  
 </head>
 <body>
     <h1>Love Maths</h1>
@@ -54,7 +54,7 @@
    <h2 id="how-to-use">How to Use</h2>
     <ol>
         <li>Clone the repository:</li>
-        <pre><code>git clone https://github.com/yourusername/love-maths.git</code></pre>
+        <pre><code>git clone https://github.com/shan-tel4/love-maths.git</code></pre>
         <li>Navigate to the project directory:</li>
         <pre><code>cd love-maths</code></pre>
         <li>Open <code>index.html</code> in your browser to start the application.</li>
@@ -68,9 +68,6 @@
         <li>Checked responsiveness on different devices and screen sizes.</li>
     </ul>
     <h3>Known Issues</h3>
-    <p>List any known bugs or issues (if applicable). For example:</p>
-    <ul>
-        <li>Division by zero results in unexpected behavior.</li>
         <li>Mobile layout shifts slightly on certain screen sizes.</li>
     </ul>
 
