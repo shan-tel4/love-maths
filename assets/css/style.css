@@ -247,47 +247,118 @@ body {
     }
 }
 
-/* Extra Small Devices (max-width: 320px) */
+
+/* General Styling for Mobile Devices (max-width: 414px) */
+@media (max-width: 414px) {
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-size: 1rem;
+    }
+
+    .controls-area {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px; /* Add spacing between buttons */
+        margin: 15px 0;
+    }
+
+    .btn--big {
+        margin: 0;
+        padding: 10px;
+        border: 3px solid;
+        width: 60px; /* Slightly smaller buttons */
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .question-area {
+        padding: 10% 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .question-area span {
+        padding: 0;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: 5px 0;
+    }
+
+    .answer-message {
+        display: block;
+        font-size: 1rem;
+        margin: 10px 0;
+        color: #444561;
+    }
+
+    #answer-box {
+        display: block;
+        margin: 10px auto;
+        width: 80%; /* Full width with some padding */
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .score-area {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .scores {
+        margin: 5px auto;
+        display: block;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+/* Styling for Extra Small Devices (max-width: 320px) */
 @media (max-width: 320px) {
     .game-area {
-        height: 70vh;
+        height: auto; /* Remove fixed height */
         padding: 10px;
     }
 
     .controls-area {
-        width: 90%;
-        margin: 10px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 100%;
+        flex-direction: column; /* Stack buttons vertically */
         gap: 10px;
     }
 
     .btn--big {
-        margin: 5px;
-        padding: 5px;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         font-size: 1.2rem;
     }
 
     .question-area {
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    .question-area span {
+        padding: 5px;
         font-size: 1.2rem;
     }
 
     #answer-box {
         margin: 5px auto;
-        width: 85%;
+        width: 90%;
         font-size: 0.9rem;
     }
 
     .scores {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .heading {
