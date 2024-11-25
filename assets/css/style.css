@@ -247,138 +247,78 @@ body {
     }
 }
 
+/* --------- Media queries */
 
-/* Responsive Styling for Small to Medium Screens (min-width: 314px, max-width: 1000px) */
-@media (min-width: 314px) and (max-width: 1000px) {
-    body {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        font-family: "Raleway", sans-serif;
-        font-size: 1rem;
-    }
-
+@media (max-width: 414px) {
     .controls-area {
-        width: 90%;
-        margin: 10px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px; /* Add space between buttons */
+        width: 100%;
     }
 
     .btn--big {
-        padding: 10px;
-        border: 3px solid;
-        width: calc(20% - 10px); /* Buttons resize based on width */
-        max-width: 80px;
-        height: auto;
-        font-size: 1.2rem;
-        text-align: center;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .question-area {
-        padding: 5% 0;
-        width: 90%;
-        margin: 0 auto 20px;
+        margin: 0 10px;
+        padding: 5px;
+        border: 5px solid;
+        width: 50px;
+        height: 50px;
         font-size: 1.5rem;
     }
 
+    .btn--big::after {
+        font-size: 0.6rem;
+        left: -0.7rem;
+    }
+
+    .question-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+
     .question-area span {
-        display: inline-block;
-        margin: 10px 0;
+        padding: 0;
     }
 
     .answer-message {
         display: block;
-        font-size: 1rem;
-        margin: 15px 0;
-        color: #444561;
     }
 
     #answer-box {
-        margin: 10px auto;
-        width: 80%;
-        padding: 10px;
-        font-size: 1.2rem;
-        text-align: center;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+    .btn--gray {
+        margin-top: 0;
     }
 
     .score-area {
         width: 100%;
-        margin: 15px auto;
-        text-align: center;
     }
 
     .scores {
-        margin: 5px auto;
-        font-size: 1rem;
-        display: inline-block;
+        margin: 0.5em auto;
+        display: block;
         padding: 5px;
     }
 
     .heading {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-    }
-}
-
-/* Additional Adjustments for Narrow Screens (min-width: 314px, max-width: 500px) */
-@media (min-width: 314px) and (max-width: 500px) {
-    .btn--big {
-        width: calc(30% - 10px); /* Resize buttons for narrower screens */
-        max-width: 60px;
-        font-size: 1rem;
-    }
-
-    .question-area {
-        font-size: 1.3rem;
-    }
-
-    #answer-box {
-        font-size: 1rem;
-    }
-
-    .scores {
-        font-size: 0.9rem;
-    }
-
-    .heading {
         font-size: 2rem;
     }
 }
 
-/* Adjustments for Medium Screens (max-width: 1000px) */
-@media (min-width: 501px) and (max-width: 1000px) {
+@media (max-width: 320px) {
+    .game-area {
+        height: 70vh;
+    }
+
     .controls-area {
-        width: 80%;
-        gap: 20px; /* Increase spacing for larger screens */
+        width: 75%;
+        margin: 10px auto;
     }
 
     .btn--big {
-        width: calc(15% - 10px);
-        max-width: 100px;
-        font-size: 1.5rem;
+        margin: 10px 10px;
     }
-
     .question-area {
-        font-size: 2rem;
+        padding: 10px 0;
     }
 
-    #answer-box {
-        font-size: 1.2rem;
-    }
-
-    .scores {
-        font-size: 1.1rem;
-    }
-
-    .heading {
-        font-size: 3rem;
-    }
 }
