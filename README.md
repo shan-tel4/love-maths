@@ -36,6 +36,8 @@
         <li>Deliver a functional and visually appealing web app.</li>
     </ul>
 
+  ![Love Maths](https://github.com/shan-tel4/love-maths/blob/main/assets/images/Love%20Maths.png?raw=true)
+
    <h2 id="features">Features</h2>
     <ul>
         <li><strong>Dynamic Math Challenges</strong>: Users can solve addition, subtraction, multiplication, and division problems.</li>
