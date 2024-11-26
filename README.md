@@ -48,6 +48,8 @@
         <li><strong>Responsive Design</strong>: Optimized for both desktop and mobile devices.</li>
     </ul>
 
+(https://github.com/shan-tel4/love-maths/blob/main/assets/images/responsive.png?raw=true)
+
   <h2 id="technologies-used">Technologies Used</h2>
     <ul>
         <li><strong>HTML5</strong>: For the structure of the application.</li>
