@@ -64,7 +64,13 @@
         <li>Verified functionality of the score tracker.</li>
         <li>Checked responsiveness on different devices and screen sizes.</li>
     </ul>
-    <h3>Known Issues</h3>
+    ![lighthoude](https://github.com/shan-tel4/love-maths/blob/main/assets/images/Light%20house.png?raw=true)
+
+    ![html checker]()
+
+    
+     
+<h3>Known Issues</h3>
         <li>Mobile layout shifts slightly on certain screen sizes.</li>
     </ul>
 
