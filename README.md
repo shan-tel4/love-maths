@@ -83,7 +83,6 @@
   <h2 id="acknowledgments">Acknowledgments</h2>
     <ul>
         <li><strong>Code Institute</strong>: For providing the project idea and guidance.</li>
-        <li><strong>Community Support</strong>: Thanks to peers and mentors for their helpful feedback.</li>
     </ul>
 
   <h2 id="license">License</h2>
