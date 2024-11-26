@@ -1,324 +1,193 @@
-/* --------- Global style */
-
+/* General styles */
 body {
-    background-color: white;
     font-family: "Raleway", sans-serif;
     color: #445361;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
 }
 
-/* --------- Heading */
-
 .heading {
-    text-align: center;
     font-size: 2.5rem;
+    margin: 20px 0;
+    color: #2c3e50;
 }
 
 .logo {
-    height: 40px;
-    padding-right: 5px;
+    width: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-/* --------- Game layout */
-
+/* Game area styles */
 .game-area {
-    background-color: #E6ECF0;
-    box-sizing: border-box;
-    width: 85%;
-    height: 65vh;
-    max-height: 450px;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-}
-
-.question-area {
-    width: 50%;
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
-}
-
-.question-area span {
-    padding: 0 15px;
-}
-
-.score-area {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .controls-area {
-    width: 85%;
-    margin: 30px auto;
-}
-
-#score {
-    color: green;
-    font-weight: bold;
-}
-
-#incorrect {
-    color: red;
-    font-weight: bold;
-}
-
-.answer-message {
-    display: none;
-    font-size: 1rem;
-}
-
-#answer-box {
-    border: none;
-    color: #445361;
-    display: inline-block;
-    height: 40px;
-    width: 80px;
-    font-size: 1.2rem;
-}
-
-.scores {
-    display: inline-block;
-    padding: 25px;
-}
-
-/* --------- Buttons */
-
-.btn {
-    width: 220px;
-    height: 60px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: white;
-}
-
-.btn:focus {
-    outline: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
 .btn--big {
-    padding-top: 10px;
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
     border-radius: 50%;
-    background-color: white;
-    border: 10px solid;
-    width: 100px;
-    height: 100px;
-    font-size: 3.2rem;
-    margin: 0 30px;
-    transition: all 0.5s;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
-.btn--big::after{
-    content: attr(data-type);
-    font-size: 1rem;
-    color: #445361;
-    position: relative;
-    left: -0.5em;
+/* Adding colors to buttons */
+.btn--green {
+    background-color: #28a745;
+    color: white;
 }
 
 .btn--blue {
-    border-color: blue;
-    color: blue;
-}
-
-.btn--blue:active,
-.btn--blue:hover {
-    background-color: darkblue;
+    background-color: #007bff;
     color: white;
 }
 
 .btn--orange {
-    border-color: orange;
-    color: orange;
-}
-
-.btn--orange:active,
-.btn--orange:hover {
-    background-color: darkorange;
+    background-color: #fd7e14;
     color: white;
 }
 
 .btn--red {
-    border-color: red;
-    color: red;
-}
-
-.btn--red:active,
-.btn--red:hover {
-    background-color: darkred;
-    color: white;
-}
-
-.btn--green {
-    border-color: green;
-    color: green;
-}
-
-.btn--green:active,
-.btn--green:hover {
-    background-color: darkgreen;
+    background-color: #dc3545;
     color: white;
 }
 
 .btn--gray {
-    margin-top: 25px;
-    background-color: #445361;
-    border: 1px transparent;
-    border-radius: 20px;
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.btn--gray:active,
 .btn--gray:hover {
-    background-color: #0d1013;
+    background-color: #5a6268;
 }
 
-/* --------- Media queries */
-
-/* General Mobile Styling (max-width: 414px) */
-@media (max-width: 414px) {
-    .controls-area {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .btn--big {
-        margin: 0 10px;
-        padding: 5px;
-        border: 5px solid;
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
-
-    .btn--big::after {
-        font-size: 0.6rem;
-        left: -0.7rem;
-    }
-
-    .question-area {
-        padding: 10% 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .question-area span {
-        padding: 0;
-        font-size: 1.5rem;
-    }
-
-    .answer-message {
-        display: block;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    #answer-box {
-        display: block;
-        margin: 10px auto;
-        width: 90%;
-        padding: 10px;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .btn--gray {
-        margin-top: 0;
-        padding: 5px 10px;
-    }
-
-    .score-area {
-        width: 100%;
-        text-align: center;
-    }
-
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-        font-size: 1rem;
-    }
-
-    .heading {
-        font-size: 2rem;
-        text-align: center;
-    }
+.btn--big:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
 }
 
-/* --------- Media queries */
-
-@media (max-width: 414px) {
-    .controls-area {
-        width: 100%;
-    }
-
-    .btn--big {
-        margin: 0 10px;
-        padding: 5px;
-        border: 5px solid;
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
-
-    .btn--big::after {
-        font-size: 0.6rem;
-        left: -0.7rem;
-    }
-
-    .question-area {
-        padding: 10% 0;
-        width: 100%;
-    }
-
-    .question-area span {
-        padding: 0;
-    }
-
-    .answer-message {
-        display: block;
-    }
-
-    #answer-box {
-        display: block;
-        margin: 0 auto;
-    }
-    .btn--gray {
-        margin-top: 0;
-    }
-
-    .score-area {
-        width: 100%;
-    }
-
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-    }
-
-    .heading {
-        font-size: 2rem;
-    }
+.question-area {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #2c3e50;
 }
 
-@media (max-width: 320px) {
+#answer-box {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.answer-message {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.score-area {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.scores {
+    margin: 10px 0;
+}
+
+.scores span {
+    font-weight: bold;
+}
+
+#score {
+    color: #28a745;
+}
+
+#incorrect {
+    color: #dc3545;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
     .game-area {
-        height: 70vh;
-    }
-
-    .controls-area {
-        width: 75%;
-        margin: 10px auto;
+        width: 90%;
+        padding: 15px;
     }
 
     .btn--big {
-        margin: 10px 10px;
-    }
-    .question-area {
-        padding: 10px 0;
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem;
     }
 
+    .question-area {
+        font-size: 1.5rem;
+    }
+
+    #answer-box {
+        width: 80%;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .scores {
+        font-size: 1rem;
+    }
+
+    .score-area {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
+
+@media (min-width: 1200px) {
+    .game-area {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .btn--big {
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+    }
+
+    .question-area {
+        font-size: 2.2rem;
+    }
+
+    #answer-box {
+        width: 40%;
+        font-size: 1.4rem;
+    }
+
+    .scores {
+        font-size: 1.4rem;
+    }
+}
+
+
