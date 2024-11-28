@@ -40,7 +40,7 @@
 
   ![Love Maths](https://github.com/shan-tel4/love-maths/blob/main/assets/images/Home%20page.png?raw=true)
 
-   <h2 id="features">Features</h2>
+   <h2 id="how-to-use">Features</h2>
     <ul>
         <li><strong>Dynamic Math Challenges</strong>: Users can solve addition, subtraction, multiplication, and division problems.</li>
         <li><strong>Real-Time Feedback</strong>: Instant feedback on whether the user's answer is correct or incorrect.</li>
