@@ -5,6 +5,9 @@ It features a fun, interactive math quiz that challenges users to solve problems
 
 [Visit Deployed Website](https://shan-tel4.github.io/love-maths/)
 
+
+![Love Maths](https://github.com/shan-tel4/love-maths/blob/main/assets/images/Home%20page.png?raw=true)
+
 ---
 
 ## Table of Contents
@@ -31,7 +34,6 @@ This project is built as part of the Code Institute curriculum, focusing on key 
 - Enhance problem-solving abilities in JavaScript.
 - Deliver a functional and visually appealing web app.
 
-![Love Maths](https://github.com/shan-tel4/love-maths/blob/main/assets/images/Home%20page.png?raw=true)
 
 ---
 
