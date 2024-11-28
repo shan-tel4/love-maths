@@ -65,9 +65,16 @@ This project is built as part of the Code Institute curriculum, focusing on key 
 ### Validator Testing:
 
 - **HTML**: Passed the W3C Nu HTML Checker without errors.  
-- **CSS**: Passed the W3C CSS Validator with no issues.  
+- **CSS**: Passed the W3C CSS Validator with no issues.
+- **Lighthouse** Scored 97 on Lighthouse.
 
 ![Lighthouse Report](https://github.com/shan-tel4/love-maths/blob/main/assets/images/Light%20house.png?raw=true)
+
+![HTML](https://github.com/shan-tel4/love-maths/blob/main/assets/images/HTML.png?raw=true)
+
+![CSS](https://github.com/shan-tel4/love-maths/blob/main/assets/images/CSS.png?raw=true)
+
+
 
 ### Known Issues:
 
