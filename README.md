@@ -58,13 +58,18 @@
     </ul>
 
   <h2 id="testing">Testing</h2>
-    <h3>Manual Testing</h3>
+    <h3>Testing</h3>
     <ul>
         <li>Tested various math problems to ensure correctness of answers.</li>
         <li>Verified functionality of the score tracker.</li>
         <li>Checked responsiveness on different devices and screen sizes.</li>
     </ul>
-    
+
+<h3>Validator Testing:</h3>
+
+- ###HTML: Passed the W3C Nu HTML Checker without errors.
+- ###CSS: Passed the W3C CSS Validator with no issues.
+- ###Unfixed Bugs: No unresolved bugs have been identified in the current version
     
 ![lighthouse](https://github.com/shan-tel4/love-maths/blob/main/assets/images/Light%20house.png?raw=true)
 
